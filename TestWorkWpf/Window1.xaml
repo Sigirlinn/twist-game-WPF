@@ -1,0 +1,36 @@
+﻿<Window x:Class="TestWorkWpf.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Сейф братьев пилотов" Height="500" Width="500" Loaded="Window_Loaded" 
+    MinWidth="500" MinHeight="500" MaxWidth="700" MaxHeight="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="5,5,5,0" Background="Beige">
+            <TextBlock VerticalAlignment="Center" Margin="5" Padding="5,0" TextAlignment="Left" FontFamily="Comic Sans MS">
+                Количество ходов
+            </TextBlock>
+            <TextBox Name ="TextBoxCountStep" VerticalAlignment="Center" Margin="5" Width="35" FontFamily="Comic Sans MS" 
+                IsReadOnly="True"/>
+            <TextBlock VerticalAlignment="Center" Margin="5" Padding="5,0" FontFamily="Comic Sans MS">
+                Размер поля
+            </TextBlock>
+            <TextBox Name="TextBoxSizeField" VerticalAlignment="Center" Margin="5" Width="35" FontFamily="Comic Sans MS">
+                4
+            </TextBox>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" Padding="5,0" 
+                Click="Button_Click" FontFamily="Comic Sans MS">
+                Новая игра
+            </Button>
+            <TextBlock Name ="TextBlockVictory" Margin="5" VerticalAlignment="Center"></TextBlock>
+        </StackPanel>
+        <Grid Name="GridFieldImage" Grid.Row="1" Margin="5" Background="Beige">
+            
+        </Grid>
+    </Grid>
+</Window>
